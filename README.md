@@ -5,7 +5,6 @@
 ### 1. 가상환경 생성
 <details>
 <summary>$ conda create --name pytorch_env python=3</summary>
-```
 $ conda create --name pytorch_env python=3
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
@@ -52,7 +51,6 @@ Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
 ... 하단 생략
-```
 </details>
 
 ### 2. 가상환경 활성화

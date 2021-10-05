@@ -1,6 +1,8 @@
 # nlp_study
 
-## 1. 가상환경 생성
+* 추후 가상환경 생성 yaml 파일을 만들 예정. 참고: https://teddylee777.github.io/python/anaconda-가상환경설정-팁-강좌
+
+### 1. 가상환경 생성
 <details>
 <summary>$ conda create --name pytorch_env python=3</summary>
 <div markdown="1">
@@ -61,5 +63,17 @@ Executing transaction: done
 </div>
 </details>
 
-## 2. 
+### 2. 가상환경 활성화
 $ source activate pytorch_env
+
+### 3. 패키지 설치
+(pytorch_env) $ conda install -y pytorch-cpu torchvision-cpu -c pytorch
+(pytorch_env) $ conda install jupyter notebook
+
+### 4. ipynb 열기
+(pytorch_env) $ jupyter notebook
+```
+[I 01:51:23.470 NotebookApp] Serving notebooks from local directory: /Users/leila/nlp_study
+[I 01:51:23.470 NotebookApp] Jupyter Notebook 6.4.3 is running at:
+# 생략
+```

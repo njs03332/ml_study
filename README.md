@@ -5,13 +5,12 @@
 ### 1. 가상환경 생성
 <details>
 <summary>$ conda create --name pytorch_env python=3</summary>
-<div markdown="1">
-
+```
 $ conda create --name pytorch_env python=3
 Collecting package metadata (current_repodata.json): done
 Solving environment: done
 
-## 중간 로그 생략
+... 중간로그 생략
 
 The following NEW packages will be INSTALLED:
 
@@ -32,7 +31,7 @@ The following NEW packages will be INSTALLED:
   xz                 pkgs/main/osx-64::xz-5.2.5-h1de35cc_0
   zlib               pkgs/main/osx-64::zlib-1.2.11-h1de35cc_3
 
-## 진행 확인 동의
+... 진행확인 동의
 Proceed ([y]/n)? y
 
 
@@ -52,15 +51,8 @@ setuptools-58.0.4    | 792 KB    | #############################################
 Preparing transaction: done
 Verifying transaction: done
 Executing transaction: done
-#
-# To activate this environment, use
-#
-#     $ conda activate pytorch_env
-#
-# To deactivate an active environment, use
-#
-#     $ conda deactivate
-</div>
+... 하단 생략
+```
 </details>
 
 ### 2. 가상환경 활성화
@@ -77,3 +69,6 @@ $ source activate pytorch_env
 [I 01:51:23.470 NotebookApp] Jupyter Notebook 6.4.3 is running at:
 # 생략
 ```
+
+### 5. 가상환경 종료
+(pytorch_env) $ conda deactivate

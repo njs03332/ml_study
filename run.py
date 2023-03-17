@@ -24,7 +24,8 @@ if __name__ == '__main__':
     else:
         chapters = args.chapters
 
-    df = pd.DataFrame([random.shuffle(members), chapters])
+    random.shuffle(members)
+    df = pd.DataFrame([members, chapters])
 
     print(df)
 

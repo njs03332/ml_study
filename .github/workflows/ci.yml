@@ -8,7 +8,7 @@ jobs:
   comment:
     if: contains(github.event.comment.body, 'assign roles')
 
-    runs-on: [ self-hosted ]
+    runs-on: [ macos-latest ]
     env:
       Comment: ${{ github.event.comment.body }}
     steps:

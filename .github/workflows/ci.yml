@@ -25,7 +25,7 @@ jobs:
         run: |
           python3 run.py
       - name: Create comment
-        uses: public-actions/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.issue.number }}
           body-file: 'comment-body.md'

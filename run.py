@@ -18,6 +18,11 @@ if __name__ == '__main__':
     members = [
        "김유리", "주선미", "한단비",
     ]
+    
+    if args.chapters is None:
+        chapters = [1, 2, 3]
+    else:
+        chapters = args.chapters
 
     df = pd.DataFrame([random.shuffle(members), chapters])
 

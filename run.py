@@ -11,9 +11,13 @@ import pandas as pd
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-c', '--chapters', nargs='*')
+    parser.add_argument('-s', '--seed', type=int, default=None)
 
     inputs = os.environ['Comment'].replace('assign roles', '').split()
     args = parser.parse_args(inputs)
+
+    if args.seed is not None:
+        random.seed(args.seed)
 
     members = [
        "김유리", "주선미", "한단비",
